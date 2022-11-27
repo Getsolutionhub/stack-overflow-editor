@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stacks.min.css">
+    <link rel="stylesheet" href="node_modules/@stackoverflow/stacks-editor/dist/styles.css" />
+    <link rel="stylesheet" href="bootStyle.css">
+    <title>TextEditor</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+
+<scrip>
+    <div class="container my-5">
+        <h1 class="mb-3">Stack-Editor Example:</h1>
+        <div id="editor-example-1"></div>
+        <button type="button" class="btn btn-primary my-4" id="btn" onclick="parseHTML()">Submit</button><br>
+        <label for="preview" class="my-4 mb-0 fs-1 mb-2">Preview:</label>
+        <hr class="my-0 mb-0">
+        <div id="preview" class="text-dark"></div>
+    </div>
+
+    <script src="bootJs.js" defer></script>
+    <script src="node_modules/@stackoverflow/stacks-editor/dist/app.bundle.js"></script>
+    <script src="stacks.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js" defer></script>
+    <script>
+        new window.stacksEditor.StacksEditor(
+            document.querySelector("#editor-example-1"),
+            "",
+            {
+            }
+        );
+    </script>
+    <script src="logic.js" defer></script>
+
+    </body>
+</html>
